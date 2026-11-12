@@ -814,6 +814,143 @@ const RECIPES = [
       "Spoon the filling over the chilled base and smooth the top. Chill for at least 4 hours, or overnight.",
       "Melt the remaining Biscoff spread and drizzle over the cheesecake. Finish with crushed cookies and slice with a hot knife."
     ]
+  },
+  {
+    id: "crispy-butter-chicken-tacos",
+    title: "Crispy Butter Chicken Tacos",
+    emoji: "🌮",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #e8a87c, #c0392b)",
+    tags: ["chicken", "tacos", "30-minutes", "crowd-pleaser"],
+    time: 35,
+    difficulty: "Medium",
+    servings: 4,
+    calories: 640,
+    description: "Crispy fried chicken tucked into warm tortillas with a buttery, spiced tomato sauce.",
+    ingredients: [
+      { qty: 500, unit: "g", item: "chicken thighs, boneless" },
+      { qty: 120, unit: "ml", item: "buttermilk" },
+      { qty: 100, unit: "g", item: "plain flour" },
+      { qty: 1, unit: "tsp", item: "garam masala" },
+      { qty: 1, unit: "tsp", item: "smoked paprika" },
+      { qty: 0.5, unit: "tsp", item: "chilli powder" },
+      { qty: 8, unit: "", item: "small flour tortillas" },
+      { qty: 2, unit: "tbsp", item: "butter" },
+      { qty: 1, unit: "tbsp", item: "tomato paste" },
+      { qty: 120, unit: "ml", item: "double cream" },
+      { qty: 2, unit: "cloves", item: "garlic, minced" },
+      { qty: 1, unit: "tsp", item: "grated ginger" },
+      { qty: 0.5, unit: "tsp", item: "garam masala (for the sauce)" },
+      { qty: null, unit: "", item: "Oil for frying" },
+      { qty: null, unit: "", item: "Fresh coriander and lime wedges, to serve" }
+    ],
+    steps: [
+      "Marinate the chicken in buttermilk with a pinch of salt for 20 minutes. Mix the flour, garam masala, smoked paprika and chilli powder in a shallow bowl.",
+      "Lift the chicken from the buttermilk, coat well in the spiced flour, and rest on a rack for 10 minutes.",
+      "Heat 2 cm of oil to 180°C / 350°F and fry the chicken for 5–6 minutes, until golden and cooked through. Drain on kitchen paper, then slice into strips.",
+      "For the sauce, melt the butter in a pan, add the garlic and ginger, and cook for 30 seconds. Stir in the tomato paste and garam masala, then pour in the cream. Simmer for 2 minutes.",
+      "Warm the tortillas. Fill with crispy chicken, spoon over the butter sauce, and finish with coriander and a squeeze of lime."
+    ]
+  },
+  {
+    id: "crispy-hot-honey-chicken-burger",
+    title: "Crispy Hot Honey Chicken Burger",
+    emoji: "🍔",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #e0a06a, #7a3b22)",
+    tags: ["chicken", "burger", "30-minutes", "crowd-pleaser"],
+    time: 35,
+    difficulty: "Medium",
+    servings: 2,
+    calories: 760,
+    description: "Crispy fried chicken on a soft bun with a sticky hot honey glaze and cool pickles.",
+    ingredients: [
+      { qty: 2, unit: "", item: "chicken breasts, halved horizontally" },
+      { qty: 100, unit: "ml", item: "buttermilk" },
+      { qty: 100, unit: "g", item: "plain flour" },
+      { qty: 1, unit: "tsp", item: "smoked paprika" },
+      { qty: 0.5, unit: "tsp", item: "garlic powder" },
+      { qty: 2, unit: "", item: "brioche buns, split" },
+      { qty: 3, unit: "tbsp", item: "honey" },
+      { qty: 1, unit: "tbsp", item: "hot sauce" },
+      { qty: 1, unit: "tbsp", item: "butter" },
+      { qty: 2, unit: "tbsp", item: "mayonnaise" },
+      { qty: 4, unit: "slices", item: "dill pickles" },
+      { qty: 2, unit: "leaves", item: "iceberg lettuce" },
+      { qty: null, unit: "", item: "Oil for frying" },
+      { qty: null, unit: "", item: "Salt and black pepper" }
+    ],
+    steps: [
+      "Marinate the chicken in buttermilk with a pinch of salt for 15 minutes. Mix the flour, smoked paprika and garlic powder in a bowl.",
+      "Coat the chicken in the seasoned flour, pressing firmly. Heat 2 cm of oil to 180°C / 350°F and fry for 4–5 minutes per side, until golden and cooked through. Drain on kitchen paper.",
+      "For the hot honey, melt the butter in a small pan, add the honey and hot sauce, and bubble for 30 seconds until glossy.",
+      "Toast the buns cut-side down. Spread mayonnaise on the bases, add lettuce, the fried chicken, pickles, and spoon over the hot honey.",
+      "Cap with the top bun and serve immediately, with extra hot honey on the side."
+    ]
+  },
+  {
+    id: "crispy-potato-nuggets",
+    title: "Crispy Potato Nuggets",
+    emoji: "🥔",
+    category: "Lunch",
+    gradient: "linear-gradient(135deg, #f3d9a4, #b98a4e)",
+    tags: ["potato", "snack", "30-minutes", "crowd-pleaser"],
+    time: 35,
+    difficulty: "Easy",
+    servings: 4,
+    calories: 320,
+    description: "Crispy golden potato nuggets — crunchy outside, fluffy inside. Dip in anything.",
+    ingredients: [
+      { qty: 700, unit: "g", item: "floury potatoes (Maris Piper or Russet)" },
+      { qty: 2, unit: "tbsp", item: "cornstarch" },
+      { qty: 2, unit: "tbsp", item: "plain flour" },
+      { qty: 2, unit: "tbsp", item: "parmesan, finely grated" },
+      { qty: 0.5, unit: "tsp", item: "garlic powder" },
+      { qty: 0.5, unit: "tsp", item: "smoked paprika" },
+      { qty: 1, unit: "tsp", item: "salt" },
+      { qty: null, unit: "", item: "Oil for frying or baking" }
+    ],
+    steps: [
+      "Peel and boil the potatoes in salted water for 12–15 minutes, until tender. Drain well and let them steam dry for 5 minutes.",
+      "Mash until smooth, then mix in the cornstarch, flour, parmesan, garlic powder, paprika and salt. The mixture should hold its shape.",
+      "Shape into small nuggets with damp hands. Chill for 15 minutes to firm up.",
+      "To fry: heat oil to 180°C / 350°F and fry in batches for 3–4 minutes, until golden. To bake: toss in a little oil and bake at 220°C / 425°F for 20–25 minutes, turning once.",
+      "Serve hot with ketchup, garlic mayo or your favourite dip."
+    ]
+  },
+  {
+    id: "oreo-brownie-stuffed-cookie-pie",
+    title: "Oreo Brownie Stuffed Cookie Pie",
+    emoji: "🍪",
+    category: "Dessert",
+    gradient: "linear-gradient(135deg, #d9a878, #3a2a1f)",
+    tags: ["dessert", "chocolate", "baking", "crowd-pleaser"],
+    time: 60,
+    difficulty: "Medium",
+    servings: 10,
+    calories: 520,
+    description: "A giant cookie pie stuffed with brownie and Oreos. Slice thick, serve warm.",
+    ingredients: [
+      { qty: 170, unit: "g", item: "butter, softened" },
+      { qty: 150, unit: "g", item: "light brown sugar" },
+      { qty: 50, unit: "g", item: "caster sugar" },
+      { qty: 2, unit: "", item: "eggs" },
+      { qty: 1, unit: "tsp", item: "vanilla extract" },
+      { qty: 260, unit: "g", item: "plain flour" },
+      { qty: 0.5, unit: "tsp", item: "baking soda" },
+      { qty: 0.5, unit: "tsp", item: "salt" },
+      { qty: 150, unit: "g", item: "chocolate chips" },
+      { qty: 12, unit: "", item: "Oreo cookies" },
+      { qty: 200, unit: "g", item: "brownie batter (ready-made or homemade)" }
+    ],
+    steps: [
+      "Heat the oven to 175°C / 350°F. Grease and line a 23 cm loose-bottomed tin.",
+      "Beat the butter and both sugars until pale and fluffy. Beat in the eggs and vanilla, then fold in the flour, baking soda and salt. Stir through the chocolate chips.",
+      "Press two-thirds of the cookie dough into the base and up the sides of the tin.",
+      "Spread the brownie batter over the base, then press the Oreos into it in a single layer.",
+      "Crumble the remaining cookie dough over the top, covering as much as you can. Bake for 30–35 minutes, until golden and set at the edges but soft in the middle.",
+      "Cool in the tin for 20 minutes, then lift out. Serve warm with vanilla ice cream."
+    ]
   }
 ];
 
