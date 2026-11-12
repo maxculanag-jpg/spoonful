@@ -7,8 +7,8 @@
     </mask>
   </defs>
   <g transform="translate(4 12)">
-    <circle cx="22" cy="26" r="19.5" fill="#c9603c" mask="url(#lb-bite)"/>
-    <g fill="#fbf7f1">
+    <circle cx="22" cy="26" r="19.5" fill="#b05e70" mask="url(#lb-bite)"/>
+    <g fill="#fce8e7">
       <rect x="12.4" y="18.5" width="3.2" height="9" rx="1.6" transform="rotate(30 14 23)"/>
       <rect x="17.4" y="28.5" width="3.2" height="9" rx="1.6" transform="rotate(-35 19 33)"/>
       <rect x="26.4" y="27.5" width="3.2" height="9" rx="1.6" transform="rotate(15 28 32)"/>

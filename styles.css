@@ -2,16 +2,16 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --cream: #fbf7f1;
-  --paper: #fffdf9;
-  --ink: #20251f;
-  --muted: #656b5f;
-  --muted-soft: #6a7063;
-  --green: #2f5d3a;
-  --green-soft: #eaf0e6;
-  --terra: #c9603c;
-  --terra-ink: #b4532f;
-  --line: #e8e0d3;
+  --cream: #fce8e7;
+  --paper: #fff7f6;
+  --ink: #2e1b1e;
+  --muted: #7a5c62;
+  --muted-soft: #9b7a80;
+  --green: #b05e70;
+  --green-soft: #f4c0c8;
+  --terra: #cb7f8a;
+  --terra-ink: #a04a5a;
+  --line: #e8cdd2;
   --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --shadow: 0 24px 44px -30px rgba(32, 37, 31, 0.55);
@@ -307,10 +307,10 @@ button { font: inherit; color: inherit; }
   place-items: center;
   border-radius: 50%;
   background:
-    radial-gradient(circle at 38% 30%, #fffdf9 0%, #f6efe3 55%, #ece2d1 100%);
-  border: 1px solid #e6dccb;
+    radial-gradient(circle at 38% 30%, #fff7f6 0%, #f6d2d6 55%, #e8cdd2 100%);
+  border: 1px solid #e8cdd2;
   box-shadow:
-    0 40px 60px -40px rgba(47, 93, 58, 0.5),
+    0 40px 60px -40px rgba(176, 94, 112, 0.45),
     inset 0 -8px 24px rgba(180, 160, 130, 0.18),
     inset 0 4px 14px rgba(255, 255, 255, 0.9);
   animation: float 7s ease-in-out infinite;
@@ -449,7 +449,7 @@ button { font: inherit; color: inherit; }
   background: var(--green);
   border-color: var(--green);
   color: #fff;
-  box-shadow: 0 8px 16px -12px rgba(47, 93, 58, 0.9);
+  box-shadow: 0 8px 16px -12px rgba(176, 94, 112, 0.9);
 }
 
 .sort {
