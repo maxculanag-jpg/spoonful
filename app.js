@@ -988,6 +988,42 @@ const RECIPES = [
       "If serving with eggs, nestle soft-boiled eggs into the sauce for the last 2–3 minutes.",
       "Serve over hot steamed rice, topped with crispy garlic, sliced leeks and a boiled egg."
     ]
+  },
+  {
+    id: "shanghai",
+    title: "Shanghai",
+    emoji: "🇵🇭",
+    category: "Lunch",
+    gradient: "linear-gradient(135deg, #f2d6a2, #c99a4e)",
+    tags: ["pork", "filipino", "fried", "crowd-pleaser"],
+    time: 60,
+    difficulty: "Medium",
+    servings: 6,
+    calories: 320,
+    description: "Lumpiang Shanghai — crispy Filipino spring rolls filled with seasoned pork. Serve with sweet chili sauce.",
+    ingredients: [
+      { qty: 680, unit: "g", item: "ground pork" },
+      { qty: 1, unit: "", item: "medium onion, finely chopped" },
+      { qty: 1, unit: "", item: "carrot, finely grated" },
+      { qty: 4, unit: "cloves", item: "garlic, minced" },
+      { qty: 4, unit: "", item: "green onions, thinly sliced" },
+      { qty: 1, unit: "tbsp", item: "sugar" },
+      { qty: 2, unit: "tbsp", item: "soy sauce" },
+      { qty: 2, unit: "tbsp", item: "oyster sauce" },
+      { qty: 1, unit: "tbsp", item: "fish sauce" },
+      { qty: 2, unit: "", item: "egg yolks" },
+      { qty: 15, unit: "", item: "lumpia (spring roll) wrappers" },
+      { qty: null, unit: "", item: "Salt and black pepper" },
+      { qty: null, unit: "", item: "Oil, for frying" },
+      { qty: null, unit: "", item: "Sweet chili sauce, to serve" }
+    ],
+    steps: [
+      "In a large bowl, combine the ground pork, onion, carrot, garlic, green onions, sugar, soy sauce, oyster sauce, fish sauce, egg yolks, salt and pepper. Mix well until sticky.",
+      "Lay a lumpia wrapper on a clean surface. Place about 2 tablespoons of filling near the bottom edge and shape into a log. Fold the bottom over the filling, fold in the sides, then roll up tightly. Seal the edge with a dab of water.",
+      "Repeat with the remaining filling and wrappers.",
+      "Heat 3 cm of oil to 175°C / 350°F. Fry the lumpia in batches for 3–4 minutes, turning, until deep golden and crisp. Drain on kitchen paper.",
+      "Serve hot with sweet chili sauce for dipping."
+    ]
   }
 ];
 
