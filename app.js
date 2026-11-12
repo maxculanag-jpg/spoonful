@@ -951,6 +951,43 @@ const RECIPES = [
       "Crumble the remaining cookie dough over the top, covering as much as you can. Bake for 30–35 minutes, until golden and set at the edges but soft in the middle.",
       "Cool in the tin for 20 minutes, then lift out. Serve warm with vanilla ice cream."
     ]
+  },
+  {
+    id: "pork-adobo",
+    title: "Pork Adobo",
+    emoji: "🇵🇭",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #8a6a4a, #3a2a1f)",
+    tags: ["pork", "filipino", "braised", "comfort"],
+    time: 140,
+    difficulty: "Medium",
+    servings: 6,
+    calories: 680,
+    description: "Filipino adobo — pork braised in soy, vinegar and garlic until meltingly tender. Serve over rice.",
+    ingredients: [
+      { qty: 1200, unit: "g", item: "pork belly (or cut of choice), cut into chunks" },
+      { qty: 15, unit: "cloves", item: "garlic, minced" },
+      { qty: 1, unit: "", item: "onion, chopped" },
+      { qty: 500, unit: "ml", item: "pork broth (or water)" },
+      { qty: 190, unit: "ml", item: "soy sauce" },
+      { qty: 100, unit: "ml", item: "cane vinegar (or white vinegar)" },
+      { qty: 3, unit: "", item: "long green chilies" },
+      { qty: 4, unit: "", item: "bay leaves" },
+      { qty: 1, unit: "tbsp", item: "whole peppercorns" },
+      { qty: 30, unit: "g", item: "palm sugar, chopped" },
+      { qty: null, unit: "", item: "Oil, for frying" },
+      { qty: null, unit: "", item: "Sliced leeks, crispy garlic bits and boiled eggs, to serve" },
+      { qty: null, unit: "", item: "Steamed rice, to serve" }
+    ],
+    steps: [
+      "Heat a little oil in a heavy pot over medium-high heat. Fry the pork in batches until lightly browned on all sides, then set aside.",
+      "In the same pot, sauté the garlic until lightly golden and fragrant. Add the onion and cook until softened.",
+      "Return the pork to the pot and pour in the broth. Add the soy sauce, vinegar, green chilies, bay leaves, peppercorns and palm sugar.",
+      "Cover and simmer on medium heat for 5–10 minutes without stirring, to let the vinegar cook off.",
+      "Reduce to low heat and braise for 1–2 hours, until the pork is tender and the sauce has reduced to a glossy, fat-rich glaze.",
+      "If serving with eggs, nestle soft-boiled eggs into the sauce for the last 2–3 minutes.",
+      "Serve over hot steamed rice, topped with crispy garlic, sliced leeks and a boiled egg."
+    ]
   }
 ];
 
