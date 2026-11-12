@@ -680,6 +680,140 @@ const RECIPES = [
       "Scrape into the tin, scatter the remaining walnuts over the top, and bake for 50–55 minutes, until a skewer comes out with just a few moist crumbs.",
       "Cool in the tin for 10 minutes, then turn out onto a rack. Slice thick and toast the next day."
     ]
+  },
+  {
+    id: "creamy-salmon-pasta",
+    title: "Creamy Salmon Pasta",
+    emoji: "🐟",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #f5c9b8, #d98a78)",
+    tags: ["pasta", "salmon", "30-minutes", "weeknight"],
+    time: 30,
+    difficulty: "Easy",
+    servings: 4,
+    calories: 620,
+    description: "Silky cream sauce, flaky salmon and a squeeze of lemon. Comfort that still feels like dinner.",
+    ingredients: [
+      { qty: 400, unit: "g", item: "salmon fillets, skin removed" },
+      { qty: 350, unit: "g", item: "linguine or fettuccine" },
+      { qty: 200, unit: "ml", item: "double cream" },
+      { qty: 60, unit: "ml", item: "dry white wine (optional)" },
+      { qty: 2, unit: "cloves", item: "garlic, finely sliced" },
+      { qty: 1, unit: "", item: "lemon, zest and juice" },
+      { qty: 30, unit: "g", item: "parmesan, finely grated" },
+      { qty: 2, unit: "tbsp", item: "fresh dill, chopped" },
+      { qty: 1, unit: "tbsp", item: "butter" },
+      { qty: 1, unit: "tbsp", item: "olive oil" },
+      { qty: null, unit: "", item: "Salt and black pepper" }
+    ],
+    steps: [
+      "Bring a large pot of salted water to the boil and cook the pasta until al dente. Reserve a mug of pasta water, then drain.",
+      "Season the salmon with salt and pepper. Heat the olive oil in a wide pan over medium-high heat and sear the salmon for 3 minutes per side, until just cooked. Lift onto a plate and flake into large pieces.",
+      "Lower the heat, add the butter and garlic, and cook for 30 seconds. Pour in the wine (if using) and let it bubble for a minute.",
+      "Add the cream, lemon zest and a squeeze of juice. Simmer gently for 2 minutes until slightly thickened.",
+      "Tip the pasta into the sauce with a splash of pasta water. Toss to coat, then fold in the salmon, parmesan and most of the dill.",
+      "Taste and adjust salt, pepper and lemon. Serve with the remaining dill and extra parmesan."
+    ]
+  },
+  {
+    id: "crispy-chicken-alfredo-wraps",
+    title: "Crispy Chicken Alfredo Wraps",
+    emoji: "🌯",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #f2d6a2, #c99a4e)",
+    tags: ["chicken", "wraps", "30-minutes", "crowd-pleaser"],
+    time: 35,
+    difficulty: "Medium",
+    servings: 4,
+    calories: 680,
+    description: "Crispy fried chicken tucked into warm tortillas with a creamy alfredo sauce. Dinner in 35.",
+    ingredients: [
+      { qty: 500, unit: "g", item: "chicken breast, cut into strips" },
+      { qty: 100, unit: "g", item: "plain flour" },
+      { qty: 2, unit: "", item: "eggs, beaten" },
+      { qty: 120, unit: "g", item: "panko breadcrumbs" },
+      { qty: 4, unit: "", item: "large flour tortillas" },
+      { qty: 200, unit: "ml", item: "double cream" },
+      { qty: 40, unit: "g", item: "parmesan, grated" },
+      { qty: 2, unit: "cloves", item: "garlic, minced" },
+      { qty: 1, unit: "tbsp", item: "butter" },
+      { qty: 60, unit: "g", item: "baby spinach" },
+      { qty: null, unit: "", item: "Oil for frying" },
+      { qty: null, unit: "", item: "Salt and black pepper" }
+    ],
+    steps: [
+      "Season the chicken strips with salt and pepper. Set up three bowls: flour, beaten egg, and panko. Coat each strip in flour, then egg, then panko.",
+      "Heat 2 cm of oil in a wide pan to 180°C / 350°F. Fry the chicken in batches for 3–4 minutes, until golden and cooked through. Drain on kitchen paper.",
+      "For the alfredo, melt the butter in a small pan, add the garlic and cook for 30 seconds. Pour in the cream, simmer for 2 minutes, then stir in the parmesan until smooth. Season to taste.",
+      "Warm the tortillas in a dry pan for 20 seconds per side. Lay spinach down the centre, top with crispy chicken, and spoon over the alfredo.",
+      "Fold the sides in and roll up tightly. Slice in half and serve straight away."
+    ]
+  },
+  {
+    id: "nashville-hot-chicken-tenders",
+    title: "Nashville Hot Chicken Tenders",
+    emoji: "🌶️",
+    category: "Dinner",
+    gradient: "linear-gradient(135deg, #e0a06a, #9a3b22)",
+    tags: ["chicken", "spicy", "fried", "crowd-pleaser"],
+    time: 40,
+    difficulty: "Medium",
+    servings: 4,
+    calories: 560,
+    description: "Crispy buttermilk tenders drenched in cayenne-butter hot oil. Eat with pickles and white bread.",
+    ingredients: [
+      { qty: 600, unit: "g", item: "chicken tenders" },
+      { qty: 250, unit: "ml", item: "buttermilk" },
+      { qty: 2, unit: "tbsp", item: "hot sauce" },
+      { qty: 200, unit: "g", item: "plain flour" },
+      { qty: 2, unit: "tsp", item: "cayenne pepper" },
+      { qty: 1, unit: "tsp", item: "smoked paprika" },
+      { qty: 1, unit: "tsp", item: "garlic powder" },
+      { qty: 1, unit: "tsp", item: "salt" },
+      { qty: 4, unit: "tbsp", item: "butter" },
+      { qty: 2, unit: "tbsp", item: "cayenne pepper (for the hot oil)" },
+      { qty: 1, unit: "tbsp", item: "brown sugar" },
+      { qty: 1, unit: "tsp", item: "chilli flakes" },
+      { qty: null, unit: "", item: "Oil for frying" },
+      { qty: null, unit: "", item: "Dill pickles and white bread, to serve" }
+    ],
+    steps: [
+      "Whisk the buttermilk and hot sauce in a bowl. Add the chicken tenders, cover, and marinate in the fridge for at least 30 minutes.",
+      "Mix the flour, cayenne, smoked paprika, garlic powder and salt in a shallow dish. Lift the tenders from the buttermilk, let the excess drip off, and coat well in the flour. Rest on a rack for 10 minutes.",
+      "Heat 3 cm of oil to 175°C / 350°F and fry the tenders in batches for 5–6 minutes, until deep golden and cooked through. Drain on a rack.",
+      "For the hot oil, melt the butter in a small pan. Off the heat, whisk in the cayenne, brown sugar and chilli flakes. Spoon generously over the hot tenders.",
+      "Serve immediately with dill pickles and slices of white bread to mop up the sauce."
+    ]
+  },
+  {
+    id: "no-bake-biscoff-cheesecake",
+    title: "No-Bake Biscoff Cheesecake",
+    emoji: "🍰",
+    category: "Dessert",
+    gradient: "linear-gradient(135deg, #d9a878, #8a5a33)",
+    tags: ["dessert", "no-bake", "make-ahead", "crowd-pleaser"],
+    time: 25,
+    difficulty: "Easy",
+    servings: 10,
+    calories: 460,
+    description: "Creamy Biscoff filling on a buttery biscuit base, finished with a melted cookie-butter swirl.",
+    ingredients: [
+      { qty: 250, unit: "g", item: "Biscoff (speculoos) cookies" },
+      { qty: 100, unit: "g", item: "butter, melted" },
+      { qty: 500, unit: "g", item: "cream cheese, room temperature" },
+      { qty: 200, unit: "g", item: "Biscoff spread (cookie butter)" },
+      { qty: 200, unit: "ml", item: "double cream" },
+      { qty: 80, unit: "g", item: "icing sugar" },
+      { qty: 1, unit: "tsp", item: "vanilla extract" },
+      { qty: null, unit: "", item: "Extra Biscoff cookies, to decorate" }
+    ],
+    steps: [
+      "Blitz the Biscoff cookies to fine crumbs and mix with the melted butter. Press firmly into the base of a 20 cm springform tin and chill for 20 minutes.",
+      "Beat the cream cheese, 150 g of the Biscoff spread, icing sugar and vanilla until smooth.",
+      "In a separate bowl, whip the cream to soft peaks, then fold it into the cream cheese mixture until no streaks remain.",
+      "Spoon the filling over the chilled base and smooth the top. Chill for at least 4 hours, or overnight.",
+      "Melt the remaining Biscoff spread and drizzle over the cheesecake. Finish with crushed cookies and slice with a hot knife."
+    ]
   }
 ];
 
