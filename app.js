@@ -1,5 +1,5 @@
 /* =========================================================
-   Spoonful — recipe data + app logic (no dependencies)
+   Seared — recipe data + app logic (no dependencies)
    ========================================================= */
 
 const RECIPES = [
@@ -684,7 +684,7 @@ const RECIPES = [
 ];
 
 /* ---------- State ---------- */
-const STORAGE_KEY = "spoonful:favs";
+const STORAGE_KEY = "seared:favs";
 
 const state = {
   query: "",
