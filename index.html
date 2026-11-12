@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spoonful — Recipes worth craving</title>
+  <meta name="description" content="Simple, tested recipes with clear steps, honest timings and ingredients that scale to your table.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥄</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" id="brand">
+        <span class="brand-mark" aria-hidden="true">🥄</span>
+        <span class="brand-name">Spoonful</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#recipes" class="nav-link" id="navAll">Recipes</a>
+        <button class="nav-link" id="savedBtn" type="button" aria-pressed="false">
+          Saved <span class="count" id="savedCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">A small, tested collection</p>
+        <h1>Less scrolling. <em>More cooking.</em></h1>
+        <p class="lede">Twenty honest recipes — weeknight quick, weekend worth-it. Clear steps, real timings, and ingredients that scale to however many are eating.</p>
+
+        <div class="search" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          <input id="search" type="search" placeholder="Search recipes, ingredients or tags…" aria-label="Search recipes" autocomplete="off" spellcheck="false">
+          <kbd class="search-hint" aria-hidden="true">/</kbd>
+        </div>
+
+        <div class="suggestions">
+          <span class="suggestions-label">Try</span>
+          <button type="button" data-suggest="shakshuka">shakshuka</button>
+          <button type="button" data-suggest="tacos">tacos</button>
+          <button type="button" data-suggest="pasta">pasta</button>
+          <button type="button" data-suggest="chocolate">chocolate</button>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="plate">
+          <span class="plate-ring"></span>
+          <img class="plate-photo" src="images/shakshuka.jpg" alt="" width="1200" height="800">
+        </div>
+        <div class="pick-card">
+          <span class="pick-label">Today's pick</span>
+          <strong>Shakshuka</strong>
+          <span class="pick-meta">25 min · Serves 2</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="toolbar" id="toolbar">
+      <div class="wrap toolbar-inner">
+        <div class="chips" id="chips" role="group" aria-label="Filter recipes by category"></div>
+        <label class="sort">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="recommended">Recommended</option>
+            <option value="time">Quickest first</option>
+            <option value="az">A–Z</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <section class="collection wrap" id="recipes" aria-labelledby="collectionTitle">
+      <div class="collection-head">
+        <h2 id="collectionTitle">All recipes</h2>
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <span class="empty-emoji" aria-hidden="true">🍽️</span>
+        <h3>Nothing on the menu</h3>
+        <p>No recipes match that search. Try a different ingredient or clear the filters.</p>
+        <button class="btn btn-primary" type="button" id="clearFilters">Clear filters</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p><span aria-hidden="true">🥄</span> Spoonful — made with butter and good intentions.</p>
+      <p class="footer-small">Cook, taste, adjust. That's the whole trick. · <a href="credits.html">Photo credits</a></p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"></div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
