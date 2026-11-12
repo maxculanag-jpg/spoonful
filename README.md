@@ -1,4 +1,4 @@
-# Seared
+# Sprinkle Bites
 
 A recipe website with 20 tested recipes, real photography, live search, category filters, serving-size scaling, and saved favourites.
 
@@ -29,6 +29,8 @@ Then visit http://127.0.0.1:4173.
 | `app.js` | Recipe data and all interaction logic |
 | `images/` | Dish photography (1200×800 JPEG) |
 | `credits.html` | Photographer and licence attribution |
+| `images/logo.svg` | Logo lockup (mark + wordmark) |
+| `images/logo-mark.svg` | Logo mark / favicon |
 
 To add a recipe, append an object to the `RECIPES` array in `app.js` and drop a matching `images/<id>.jpg` in place — the UI picks it up automatically.
 

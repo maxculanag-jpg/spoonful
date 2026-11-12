@@ -74,6 +74,8 @@ button { font: inherit; color: inherit; }
   letter-spacing: -0.02em;
 }
 
+.brand-mark { width: 30px; height: 30px; flex: none; }
+
 .nav { display: flex; align-items: center; gap: 6px; }
 
 .nav-link {
@@ -1105,6 +1107,17 @@ button { font: inherit; color: inherit; }
   #recipes { scroll-margin-top: 78px; }
   .grid { gap: 18px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
+
+@media (max-width: 560px) {
+  .brand { font-size: 1.1rem; gap: 8px; }
+  .brand-mark { width: 25px; height: 25px; }
+  .nav { gap: 2px; }
+  .nav-link { padding: 8px 11px; font-size: 0.85rem; }
+}
+
+@media (max-width: 410px) {
+  #navAll { display: none; }
 }
 
 @media (max-width: 700px) {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 72" width="340" height="72" role="img" aria-label="Sprinkle Bites">
+  <defs>
+    <mask id="lb-bite">
+      <rect width="48" height="48" fill="#000"/>
+      <circle cx="22" cy="26" r="19.5" fill="#fff"/>
+      <circle cx="40" cy="9" r="11.5" fill="#000"/>
+    </mask>
+  </defs>
+  <g transform="translate(4 12)">
+    <circle cx="22" cy="26" r="19.5" fill="#c9603c" mask="url(#lb-bite)"/>
+    <g fill="#fbf7f1">
+      <rect x="12.4" y="18.5" width="3.2" height="9" rx="1.6" transform="rotate(30 14 23)"/>
+      <rect x="17.4" y="28.5" width="3.2" height="9" rx="1.6" transform="rotate(-35 19 33)"/>
+      <rect x="26.4" y="27.5" width="3.2" height="9" rx="1.6" transform="rotate(15 28 32)"/>
+      <rect x="23.4" y="12.5" width="3.2" height="9" rx="1.6" transform="rotate(105 25 17)"/>
+    </g>
+  </g>
+  <text x="80" y="45" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="34" font-weight="600" letter-spacing="-0.6" fill="#20251f">Sprinkle Bites</text>
+</svg>

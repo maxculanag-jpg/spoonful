@@ -3,19 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seared — Recipes worth cooking</title>
+  <title>Sprinkle Bites — Recipes worth cooking</title>
   <meta name="description" content="Simple, tested recipes with clear steps, honest timings and ingredients that scale to your table.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" id="brand">
-        <span class="brand-name">Seared</span>
+        <svg class="brand-mark" viewBox="0 0 48 48" width="30" height="30" aria-hidden="true" focusable="false">
+          <defs>
+            <mask id="brand-bite">
+              <rect width="48" height="48" fill="#000"/>
+              <circle cx="22" cy="26" r="19.5" fill="#fff"/>
+              <circle cx="40" cy="9" r="11.5" fill="#000"/>
+            </mask>
+          </defs>
+          <circle cx="22" cy="26" r="19.5" fill="#c9603c" mask="url(#brand-bite)"/>
+          <g fill="#fbf7f1">
+            <rect x="12.4" y="18.5" width="3.2" height="9" rx="1.6" transform="rotate(30 14 23)"/>
+            <rect x="17.4" y="28.5" width="3.2" height="9" rx="1.6" transform="rotate(-35 19 33)"/>
+            <rect x="26.4" y="27.5" width="3.2" height="9" rx="1.6" transform="rotate(15 28 32)"/>
+            <rect x="23.4" y="12.5" width="3.2" height="9" rx="1.6" transform="rotate(105 25 17)"/>
+          </g>
+        </svg>
+        <span class="brand-name">Sprinkle Bites</span>
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#recipes" class="nav-link" id="navAll">Recipes</a>
@@ -91,7 +109,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>Seared — high heat, good butter, honest recipes.</p>
+      <p>Sprinkle Bites — good butter, honest recipes.</p>
       <p class="footer-small">Cook, taste, adjust. That's the whole trick. · <a href="credits.html">Photo credits</a></p>
     </div>
   </footer>

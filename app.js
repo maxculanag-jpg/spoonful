@@ -1,5 +1,5 @@
 /* =========================================================
-   Seared — recipe data + app logic (no dependencies)
+   Sprinkle Bites — recipe data + app logic (no dependencies)
    ========================================================= */
 
 const RECIPES = [
@@ -684,7 +684,7 @@ const RECIPES = [
 ];
 
 /* ---------- State ---------- */
-const STORAGE_KEY = "seared:favs";
+const STORAGE_KEY = "sprinkle-bites:favs";
 
 const state = {
   query: "",
