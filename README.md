@@ -1,4 +1,4 @@
-# Seared 🔥
+# Seared
 
 A recipe website with 20 tested recipes, real photography, live search, category filters, serving-size scaling, and saved favourites.
 
