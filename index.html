@@ -52,7 +52,7 @@
 
         <div class="search" role="search">
           <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-          <input id="search" type="search" placeholder="Search recipes, ingredients or tags…" aria-label="Search recipes" autocomplete="off" spellcheck="false">
+          <input id="search" type="search" placeholder="Search by name or ingredient…" aria-label="Search recipes" autocomplete="off" spellcheck="false">
           <kbd class="search-hint" aria-hidden="true">/</kbd>
         </div>
 
@@ -84,8 +84,9 @@
         <label class="sort">
           <span>Sort</span>
           <select id="sort">
-            <option value="recommended">Recommended</option>
+            <option value="recommended">Most popular</option>
             <option value="time">Quickest first</option>
+            <option value="calories">Lowest calories</option>
             <option value="az">A–Z</option>
           </select>
         </label>
@@ -95,7 +96,6 @@
     <section class="collection wrap" id="recipes" aria-labelledby="collectionTitle">
       <div class="collection-head">
         <h2 id="collectionTitle">All recipes</h2>
-        <p class="result-count" id="resultCount" aria-live="polite"></p>
       </div>
       <div class="grid" id="grid"></div>
       <div class="empty" id="empty" hidden>

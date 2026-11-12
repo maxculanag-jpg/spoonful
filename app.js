@@ -892,7 +892,7 @@ const RECIPES = [
     id: "crispy-potato-nuggets",
     title: "Crispy Potato Nuggets",
     emoji: "🥔",
-    category: "Lunch",
+    category: "Snacks",
     gradient: "linear-gradient(135deg, #f3d9a4, #b98a4e)",
     tags: ["potato", "snack", "30-minutes", "crowd-pleaser"],
     time: 35,
@@ -993,7 +993,7 @@ const RECIPES = [
     id: "shanghai",
     title: "Shanghai",
     emoji: "🇵🇭",
-    category: "Lunch",
+    category: "Snacks",
     gradient: "linear-gradient(135deg, #f2d6a2, #c99a4e)",
     tags: ["pork", "filipino", "fried", "crowd-pleaser"],
     time: 60,
@@ -1051,7 +1051,6 @@ const chips = document.getElementById("chips");
 const searchInput = document.getElementById("search");
 const sortSelect = document.getElementById("sort");
 const empty = document.getElementById("empty");
-const resultCount = document.getElementById("resultCount");
 const collectionTitle = document.getElementById("collectionTitle");
 const savedCount = document.getElementById("savedCount");
 const savedBtn = document.getElementById("savedBtn");
@@ -1143,6 +1142,7 @@ function visibleRecipes() {
   });
 
   if (state.sort === "time") list.sort((a, b) => a.time - b.time);
+  if (state.sort === "calories") list.sort((a, b) => a.calories - b.calories);
   if (state.sort === "az") list.sort((a, b) => a.title.localeCompare(b.title));
 
   return list;
@@ -1189,11 +1189,6 @@ function renderGrid() {
 
   grid.innerHTML = list.map(cardHTML).join("");
   empty.hidden = list.length > 0;
-
-  resultCount.textContent =
-    list.length === 0
-      ? "No recipes found"
-      : `${list.length} recipe${list.length === 1 ? "" : "s"}`;
 
   collectionTitle.textContent = state.favsOnly ? "Saved recipes" : "All recipes";
 }
