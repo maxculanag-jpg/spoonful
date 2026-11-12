@@ -1164,7 +1164,7 @@ function cardHTML(recipe, index) {
   return `
     <article class="card" data-id="${recipe.id}" style="animation-delay:${Math.min(index * 30, 240)}ms">
       <div class="thumb" style="background:${recipe.gradient}">
-        <img class="thumb-img" src="images/${recipe.id}.jpg?v=3" alt="" width="1200" height="800"
+        <img class="thumb-img" src="images/${recipe.id}.jpg?v=4" alt="" width="1200" height="800"
           loading="lazy" decoding="async" onerror="this.remove()">
         <span class="badge">${recipe.category}</span>
         <button class="heart" type="button" data-fav="${recipe.id}"
@@ -1243,7 +1243,7 @@ function openRecipe(id) {
 
   panel.innerHTML = `
     <div class="modal-banner" style="background:${recipe.gradient}">
-      <img class="modal-img" src="images/${recipe.id}.jpg?v=3" alt="${recipe.title}"
+      <img class="modal-img" src="images/${recipe.id}.jpg?v=4" alt="${recipe.title}"
         width="1200" height="800" onerror="this.remove()">
       <span class="badge">${recipe.category}</span>
       <button class="close-btn" type="button" data-close aria-label="Close recipe">${ICONS.close}</button>
