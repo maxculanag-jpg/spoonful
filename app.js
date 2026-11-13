@@ -1259,12 +1259,13 @@ function openRecipe(id) {
           <div class="ing-head">
             <h3>Ingredients</h3>
             <div class="stepper" role="group" aria-label="Adjust servings">
+              <span class="serv-label">Serving for</span>
               <button type="button" id="servMinus" aria-label="Decrease servings">−</button>
               <output id="servOut" aria-live="polite">${currentServings}</output>
               <button type="button" id="servPlus" aria-label="Increase servings">+</button>
             </div>
           </div>
-          <p class="serves-note">Servings</p>
+          <p class="serves-note">Quantities update automatically</p>
           <div class="ing-list" id="ingList">${ingredientsHTML(recipe, currentServings)}</div>
         </aside>
 
