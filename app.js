@@ -1039,9 +1039,9 @@ const RECIPES = [
     description: "The Utah classic — ketchup and mayo whisked together, with hot sauce if you like it spicy. Perfect for fries.",
     storage: "Stores up to 2 weeks in an airtight jar in the fridge. Stir before using.",
     ingredients: [
-      { qty: 0.5, unit: "cup", item: "ketchup" },
-      { qty: 0.5, unit: "cup", item: "mayonnaise" },
-      { qty: null, unit: "", item: "Hot sauce, to taste (optional)" }
+      { qty: 8, unit: "tbsp", item: "ketchup" },
+      { qty: 8, unit: "tbsp", item: "mayonnaise" },
+      { qty: null, unit: "", item: "Hot sauce (optional)" }
     ],
     steps: [
       "Measure the ketchup and mayonnaise into a bowl.",
