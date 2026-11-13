@@ -1024,6 +1024,31 @@ const RECIPES = [
       "Heat 3 cm of oil to 175°C / 350°F. Fry the lumpia in batches for 3–4 minutes, turning, until deep golden and crisp. Drain on kitchen paper.",
       "Serve hot with sweet chili sauce for dipping."
     ]
+  },
+  {
+    id: "fry-sauce",
+    title: "Fry Sauce",
+    emoji: "🍟",
+    category: "Sauces",
+    gradient: "linear-gradient(135deg, #f5c9b8, #e8a87c)",
+    tags: ["sauce", "5-minutes", "dip", "easy"],
+    time: 5,
+    difficulty: "Easy",
+    servings: 8,
+    calories: 105,
+    description: "The Utah classic — ketchup and mayo whisked together, with hot sauce if you like it spicy. Perfect for fries.",
+    storage: "Stores up to 2 weeks in an airtight jar in the fridge. Stir before using.",
+    ingredients: [
+      { qty: 0.5, unit: "cup", item: "ketchup" },
+      { qty: 0.5, unit: "cup", item: "mayonnaise" },
+      { qty: null, unit: "", item: "Hot sauce, to taste (optional)" }
+    ],
+    steps: [
+      "Measure the ketchup and mayonnaise into a bowl.",
+      "Whisk together until smooth and evenly pink.",
+      "Add dashes of hot sauce to taste if you want it spicy.",
+      "Serve immediately with fries, or chill for 15 minutes to let the flavours meld."
+    ]
   }
 ];
 
