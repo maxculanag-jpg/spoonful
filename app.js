@@ -1049,6 +1049,162 @@ const RECIPES = [
       "Add dashes of hot sauce to taste if you want it spicy.",
       "Serve immediately with fries, or chill for 15 minutes to let the flavours meld."
     ]
+  },
+  {
+    id: "bechamel",
+    title: "Béchamel",
+    emoji: "🥛",
+    category: "Sauces",
+    subcategory: "French Mother Sauces",
+    gradient: "linear-gradient(135deg, #f6efe3, #ece2d1)",
+    tags: ["sauce", "french", "mother-sauce", "classic"],
+    time: 35,
+    difficulty: "Medium",
+    servings: 1,
+    calories: 200,
+    description: "The classic white sauce — milk thickened with a butter-and-flour roux. Base for Mornay, soufflé and more.",
+    storage: "Keeps 3–4 days in an airtight container in the fridge. Reheat gently, whisking in a splash of milk.",
+    ingredients: [
+      { qty: 250, unit: "ml", item: "milk" },
+      { qty: 15, unit: "g", item: "butter" },
+      { qty: 15, unit: "g", item: "plain flour" },
+      { qty: 0.25, unit: "", item: "small onion, studded with 1 clove and 1 bay leaf (onion piqué)" },
+      { qty: null, unit: "", item: "Salt" },
+      { qty: null, unit: "", item: "White pepper" },
+      { qty: null, unit: "", item: "Nutmeg, a pinch" }
+    ],
+    steps: [
+      "Bring the milk to a gentle simmer with the onion piqué. Leave to infuse for 10 minutes, then remove the onion.",
+      "Melt the butter in a saucepan and stir in the flour to make a white roux. Cook gently for 2–3 minutes without colouring.",
+      "Gradually whisk in the hot milk until smooth.",
+      "Bring to the boil, then simmer for 20–30 minutes, stirring occasionally.",
+      "Season with salt, white pepper and a little nutmeg.",
+      "Strain and serve as required."
+    ]
+  },
+  {
+    id: "veloute",
+    title: "Velouté",
+    emoji: "🍗",
+    category: "Sauces",
+    subcategory: "French Mother Sauces",
+    gradient: "linear-gradient(135deg, #f6efe3, #d9c9a8)",
+    tags: ["sauce", "french", "mother-sauce", "classic"],
+    time: 40,
+    difficulty: "Medium",
+    servings: 1,
+    calories: 180,
+    description: "Stock thickened with a light blond roux — silky and versatile, for poultry, veal or fish.",
+    storage: "Keeps 3–4 days refrigerated. Reheat gently over low heat.",
+    ingredients: [
+      { qty: 250, unit: "ml", item: "white stock (chicken, veal or fish)" },
+      { qty: 15, unit: "g", item: "butter" },
+      { qty: 15, unit: "g", item: "plain flour" },
+      { qty: null, unit: "", item: "Salt" },
+      { qty: null, unit: "", item: "White pepper" }
+    ],
+    steps: [
+      "Make a blond roux by cooking the butter and flour together until pale golden.",
+      "Gradually whisk in the hot stock.",
+      "Bring to the boil, then simmer gently for 30 minutes, skimming if necessary.",
+      "Season lightly with salt and white pepper.",
+      "Strain before serving."
+    ]
+  },
+  {
+    id: "espagnole",
+    title: "Espagnole",
+    emoji: "🥩",
+    category: "Sauces",
+    subcategory: "French Mother Sauces",
+    gradient: "linear-gradient(135deg, #8a6a4a, #3a2a1f)",
+    tags: ["sauce", "french", "mother-sauce", "classic"],
+    time: 75,
+    difficulty: "Medium",
+    servings: 1,
+    calories: 150,
+    description: "A rich brown sauce of veal stock, vegetables and tomato purée — the base of demi-glace.",
+    storage: "Keeps up to 1 week refrigerated, or 3 months frozen. Degrease before using.",
+    ingredients: [
+      { qty: 250, unit: "ml", item: "brown veal stock" },
+      { qty: 15, unit: "g", item: "butter" },
+      { qty: 15, unit: "g", item: "plain flour" },
+      { qty: 25, unit: "g", item: "mirepoix (diced onion, carrot and celery)" },
+      { qty: 12, unit: "g", item: "tomato purée" },
+      { qty: 0.25, unit: "", item: "bouquet garni" },
+      { qty: null, unit: "", item: "Salt and pepper" }
+    ],
+    steps: [
+      "Cook the mirepoix in a little butter until lightly coloured.",
+      "Add the tomato purée and cook for a few minutes.",
+      "Prepare a brown roux by cooking the butter and flour together until chestnut brown.",
+      "Gradually whisk in the hot brown stock.",
+      "Add the mirepoix mixture and bouquet garni.",
+      "Simmer gently for 1 hour.",
+      "Strain and degrease before serving or using as the base for another sauce."
+    ]
+  },
+  {
+    id: "tomate",
+    title: "Tomate",
+    emoji: "🍅",
+    category: "Sauces",
+    subcategory: "French Mother Sauces",
+    gradient: "linear-gradient(135deg, #e0a06a, #b23a2e)",
+    tags: ["sauce", "french", "mother-sauce", "classic"],
+    time: 60,
+    difficulty: "Easy",
+    servings: 1,
+    calories: 120,
+    description: "Tomatoes simmered with onion, garlic and herbs — a versatile French tomato sauce.",
+    storage: "Keeps 4–5 days refrigerated, or 3 months frozen.",
+    ingredients: [
+      { qty: 250, unit: "g", item: "tomatoes (or peeled plum tomatoes)" },
+      { qty: 25, unit: "g", item: "onion, finely diced" },
+      { qty: 1, unit: "clove", item: "garlic" },
+      { qty: 7.5, unit: "ml", item: "olive oil" },
+      { qty: 0.25, unit: "", item: "bouquet garni" },
+      { qty: null, unit: "", item: "Salt and pepper" }
+    ],
+    steps: [
+      "Sweat the onion gently in the olive oil.",
+      "Add the garlic and tomatoes.",
+      "Add the bouquet garni.",
+      "Simmer gently for 45–60 minutes.",
+      "Remove the bouquet garni.",
+      "Pass the sauce through a food mill, or blend and strain.",
+      "Season with salt and pepper to taste."
+    ]
+  },
+  {
+    id: "hollandaise",
+    title: "Hollandaise",
+    emoji: "🍋",
+    category: "Sauces",
+    subcategory: "French Mother Sauces",
+    gradient: "linear-gradient(135deg, #f6d2d6, #e8a87c)",
+    tags: ["sauce", "french", "mother-sauce", "classic"],
+    time: 15,
+    difficulty: "Medium",
+    servings: 1,
+    calories: 400,
+    description: "An emulsion of egg yolks, butter and lemon — rich, buttery and lightly tangy. Serve immediately.",
+    storage: "Best served immediately. Can be held warm for up to 30 minutes; do not refrigerate.",
+    ingredients: [
+      { qty: 1, unit: "", item: "egg yolk" },
+      { qty: 80, unit: "g", item: "clarified butter, warm" },
+      { qty: 5, unit: "ml", item: "water" },
+      { qty: 5, unit: "ml", item: "lemon juice" },
+      { qty: null, unit: "", item: "Salt" },
+      { qty: null, unit: "", item: "Pinch of cayenne pepper" }
+    ],
+    steps: [
+      "Whisk the egg yolk and water over a bain-marie until thickened.",
+      "Gradually whisk in the warm clarified butter to form a smooth emulsion.",
+      "Add the lemon juice.",
+      "Season with salt and a pinch of cayenne pepper.",
+      "Serve immediately."
+    ]
   }
 ];
 
@@ -1214,7 +1370,7 @@ function cardHTML(recipe, index) {
   return `
     <article class="card" data-id="${recipe.id}" style="animation-delay:${Math.min(index * 30, 240)}ms">
       <div class="thumb" style="background:${recipe.gradient}">
-        <img class="thumb-img" src="images/${recipe.id}.jpg?v=8" alt="" width="1200" height="800"
+        <img class="thumb-img" src="images/${recipe.id}.jpg?v=9" alt="" width="1200" height="800"
           loading="lazy" decoding="async" onerror="this.remove()">
         <span class="badge">${recipe.category}</span>
         <button class="heart" type="button" data-fav="${recipe.id}"
@@ -1313,7 +1469,7 @@ function openRecipe(id) {
 
   panel.innerHTML = `
     <div class="modal-banner" style="background:${recipe.gradient}">
-      <img class="modal-img" src="images/${recipe.id}.jpg?v=8" alt="${recipe.title}"
+      <img class="modal-img" src="images/${recipe.id}.jpg?v=9" alt="${recipe.title}"
         width="1200" height="800" onerror="this.remove()">
       <span class="badge">${recipe.category}</span>
       <button class="close-btn" type="button" data-close aria-label="Close recipe">${ICONS.close}</button>

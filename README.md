@@ -1,6 +1,6 @@
 # Sprinkle Bites
 
-A recipe website with 30 tested recipes, real photography, live search, category filters, serving-size scaling, and saved favourites.
+A recipe website with 36 tested recipes, real photography, live search, category filters, serving-size scaling, and saved favourites.
 
 No build step, no dependencies — just open `index.html`, or serve the folder:
 
