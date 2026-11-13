@@ -1181,7 +1181,6 @@ function cardHTML(recipe, index) {
         <div class="meta">
           <span>${ICONS.clock}${recipe.time} min</span>
           <span>${ICONS.flame}${recipe.calories} kcal</span>
-          <span>${ICONS.users}Serves ${recipe.servings}</span>
         </div>
       </div>
     </article>`;
