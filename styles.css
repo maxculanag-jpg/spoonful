@@ -1182,3 +1182,29 @@ button { font: inherit; color: inherit; }
   color: var(--terra);
   letter-spacing: 0.01em;
 }
+
+
+.storage-note {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--green);
+  background: var(--green-soft);
+  border-radius: 8px;
+}
+
+.storage-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.storage-note p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.5;
+}

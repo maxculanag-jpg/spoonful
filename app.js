@@ -1118,7 +1118,10 @@ function saveFavs() {
 }
 
 function categories() {
-  return ["All", ...new Set(RECIPES.map((r) => r.category))];
+  const present = new Set(RECIPES.map((r) => r.category));
+  const ordered = ["Breakfast", "Lunch", "Dinner", "Dessert", "Snacks", "Sauces"];
+  const cats = ["All", ...ordered.filter((c) => c === "Sauces" || present.has(c))];
+  return cats;
 }
 
 function matchesQuery(recipe, query) {
@@ -1189,6 +1192,14 @@ function renderGrid() {
 
   grid.innerHTML = list.map(cardHTML).join("");
   empty.hidden = list.length > 0;
+  const emptyText = empty.querySelector("p");
+  if (emptyText) {
+    if (state.category === "Sauces" && list.length === 0) {
+      emptyText.textContent = "No sauces yet — check back soon.";
+    } else if (list.length === 0) {
+      emptyText.textContent = "No recipes match that search. Try a different ingredient or clear the filters.";
+    }
+  }
 
   collectionTitle.textContent = state.favsOnly ? "Saved recipes" : "All recipes";
 }
@@ -1274,6 +1285,7 @@ function openRecipe(id) {
           <ol class="steps">
             ${recipe.steps.map((step) => `<li>${step}</li>`).join("")}
           </ol>
+          ${recipe.storage ? `<div class="storage-note"><span class="storage-label">Storage</span><p>${recipe.storage}</p></div>` : ""}
         </div>
       </div>
 
