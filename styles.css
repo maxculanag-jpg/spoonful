@@ -344,39 +344,6 @@ button { font: inherit; color: inherit; }
   pointer-events: none;
 }
 
-.pick-card {
-  position: absolute;
-  left: -6px;
-  bottom: 12px;
-  display: grid;
-  gap: 1px;
-  padding: 13px 20px 14px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 20px 40px -24px rgba(32, 37, 31, 0.5);
-  transform: rotate(-4deg);
-  animation: float 7s ease-in-out infinite;
-  animation-delay: -2.5s;
-}
-
-.pick-label {
-  color: var(--terra-ink);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.pick-card strong {
-  font-family: var(--serif);
-  font-size: 1.22rem;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.pick-meta { color: var(--muted-soft); font-size: 0.76rem; }
-
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(-4deg); }
   50% { transform: translateY(-9px) rotate(-2deg); }
@@ -394,7 +361,7 @@ button { font: inherit; color: inherit; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .plate, .pick-card { animation: none; }
+  .plate { animation: none; }
 }
 
 
