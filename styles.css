@@ -313,7 +313,6 @@ button { font: inherit; color: inherit; }
     0 40px 60px -40px rgba(176, 94, 112, 0.45),
     inset 0 -8px 24px rgba(180, 160, 130, 0.18),
     inset 0 4px 14px rgba(255, 255, 255, 0.9);
-  animation: float 7s ease-in-out infinite;
 }
 
 .plate-ring {
