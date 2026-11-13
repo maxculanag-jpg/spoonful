@@ -1233,6 +1233,22 @@ function cardHTML(recipe, index) {
     </article>`;
 }
 
+function renderSauceIntro() {
+  const el = document.getElementById("sauceIntro");
+  if (!el) return;
+  if (state.category === "Sauces" && state.subcategory === "French Mother Sauces") {
+    el.hidden = false;
+    el.innerHTML = `
+      <h2 class="sauce-intro-title">Why are they called mother sauces?</h2>
+      <p>The name reflects their role as the starting point for numerous other sauces. By altering the seasoning or adding a handful of additional ingredients, each mother sauce can produce a family of \u2018daughter sauces\u2019.</p>
+      <p>For example, Hollandaise forms the basis of B\u00e9arnaise, while B\u00e9chamel can be transformed into Mornay with the addition of cheese. Learning the five basic techniques is therefore one of the most useful starting points for anyone interested in traditional French cooking.</p>
+    `;
+  } else {
+    el.hidden = true;
+    el.innerHTML = "";
+  }
+}
+
 function renderGrid() {
   const list = visibleRecipes();
 
@@ -1259,6 +1275,7 @@ function renderNav() {
 function render() {
   renderChips();
   renderSubChips();
+  renderSauceIntro();
   renderGrid();
   renderNav();
   if (currentRecipe) updateModalFav();
@@ -1421,6 +1438,7 @@ if (subChips) {
     const button = event.target.closest("[data-sub]");
     if (!button) return;
     state.subcategory = button.dataset.sub;
+    renderSauceIntro();
     renderGrid();
     renderSubChips();
   });

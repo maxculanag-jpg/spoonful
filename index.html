@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
 
@@ -76,7 +76,6 @@
     <div class="toolbar" id="toolbar">
       <div class="wrap toolbar-inner">
         <div class="chips" id="chips" role="group" aria-label="Filter recipes by category"></div>
-        <div class="sub-chips" id="subChips" role="group" aria-label="Filter sauces" hidden></div>
         <label class="sort">
           <span>Sort</span>
           <select id="sort">
@@ -93,6 +92,8 @@
       <div class="collection-head">
         <h2 id="collectionTitle">All recipes</h2>
       </div>
+      <div class="sauce-intro" id="sauceIntro" hidden></div>
+      <div class="sub-chips" id="subChips" role="group" aria-label="Filter sauces" hidden></div>
       <div class="grid" id="grid"></div>
       <div class="empty" id="empty" hidden>
         <span class="empty-emoji" aria-hidden="true">🍽️</span>
