@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glossary of cooking terms — Sprinkle Bites</title>
+  <meta name="description" content="A plain-English glossary of common cooking terms used across Sprinkle Bites recipes.">
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=12">
+  <style>
+    .glossary { max-width: 820px; padding: 56px 0 80px; }
+    .glossary h1 { margin: 18px 0 0; font-family: var(--serif); font-size: clamp(2.1rem, 5vw, 3rem); font-weight: 500; letter-spacing: -0.03em; }
+    .glossary .lede { max-width: 62ch; margin: 14px 0 34px; color: var(--muted); }
+    .glossary-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .glossary-list li { display: grid; grid-template-columns: 180px 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .term { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--green); }
+    .def { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+    .glossary-back { display: inline-flex; margin-top: 30px; color: var(--green); font-weight: 600; text-decoration: none; }
+    .glossary-back:hover { text-decoration: underline; }
+    @media (max-width: 620px) { .glossary-list li { grid-template-columns: 1fr; gap: 4px; } .glossary { padding-top: 40px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 48 48" width="30" height="30" aria-hidden="true" focusable="false">
+          <defs>
+            <mask id="gloss-bite">
+              <rect width="48" height="48" fill="#000"/>
+              <circle cx="22" cy="26" r="19.5" fill="#fff"/>
+              <circle cx="40" cy="9" r="11.5" fill="#000"/>
+            </mask>
+          </defs>
+          <circle cx="22" cy="26" r="19.5" fill="#b05e70" mask="url(#gloss-bite)"/>
+          <g fill="#fce8e7">
+            <rect x="12.4" y="18.5" width="3.2" height="9" rx="1.6" transform="rotate(30 14 23)"/>
+            <rect x="17.4" y="28.5" width="3.2" height="9" rx="1.6" transform="rotate(-35 19 33)"/>
+            <rect x="26.4" y="27.5" width="3.2" height="9" rx="1.6" transform="rotate(15 28 32)"/>
+            <rect x="23.4" y="12.5" width="3.2" height="9" rx="1.6" transform="rotate(105 25 17)"/>
+          </g>
+        </svg>
+        <span class="brand-name">Sprinkle Bites</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav-link" href="index.html">Recipes</a>
+        <a class="nav-link" href="glossary.html">Glossary</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="wrap glossary">
+      <p class="eyebrow">Reference</p>
+      <h1>Glossary of cooking terms</h1>
+      <p class="lede">Plain-English explanations of the words you'll meet across the recipes. No jargon, no gatekeeping.</p>
+      <ul class="glossary-list">
+        <li><span class="term">Al dente</span><span class="def">Pasta cooked until tender but still with a slight bite in the centre.</span></li>
+        <li><span class="term">Bain-marie</span><span class="def">A gentle water bath — a bowl set over simmering water — used to melt chocolate or cook delicate sauces without scorching.</span></li>
+        <li><span class="term">Blanch</span><span class="def">Briefly boil food, then plunge into ice water to stop cooking and set colour.</span></li>
+        <li><span class="term">Deglaze</span><span class="def">Add liquid to a hot pan to loosen the browned bits (fond) stuck to the bottom, forming the base of a sauce.</span></li>
+        <li><span class="term">Dice</span><span class="def">Cut into small, even cubes.</span></li>
+        <li><span class="term">Emulsion</span><span class="def">A stable mixture of two liquids that don't normally combine, like oil and water, held together by whisking (e.g. mayonnaise, hollandaise).</span></li>
+        <li><span class="term">Fold</span><span class="def">Gently combine a light mixture into a heavier one using a spatula, keeping as much air as possible.</span></li>
+        <li><span class="term">Julienne</span><span class="def">Cut into thin matchstick-sized strips.</span></li>
+        <li><span class="term">Mince</span><span class="def">Chop very finely.</span></li>
+        <li><span class="term">Reduce</span><span class="def">Simmer a liquid to evaporate water and concentrate flavour and thickness.</span></li>
+        <li><span class="term">Roux</span><span class="def">Equal parts butter and flour cooked together, used to thicken sauces (white, blond or brown depending on colour).</span></li>
+        <li><span class="term">Sauté</span><span class="def">Cook quickly in a small amount of hot fat, tossing the food in the pan.</span></li>
+        <li><span class="term">Simmer</span><span class="def">Cook just below boiling, with small bubbles gently breaking the surface.</span></li>
+        <li><span class="term">Temper</span><span class="def">Slowly raise the temperature of an egg or dairy mixture by adding hot liquid a little at a time, to avoid curdling.</span></li>
+        <li><span class="term">Zest</span><span class="def">The coloured outer peel of citrus fruit, finely grated, full of aromatic oils.</span></li>
+      </ul>
+      <a class="glossary-back" href="index.html">← Back to recipes</a>
+    </section>
+  </main>
+
+  <p class="love-note">Made with love from your Hubby&lt;3</p>
+</body>
+</html>

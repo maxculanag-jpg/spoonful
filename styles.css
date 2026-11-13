@@ -1093,6 +1093,7 @@ button { font: inherit; color: inherit; }
 
 @media (max-width: 410px) {
   #navAll { display: none; }
+  #navGlossary { display: none; }
 }
 
 @media (max-width: 700px) {
