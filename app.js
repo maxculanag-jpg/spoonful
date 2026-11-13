@@ -1058,6 +1058,7 @@ const STORAGE_KEY = "sprinkle-bites:favs";
 const state = {
   query: "",
   category: "All",
+  subcategory: "All",
   sort: "recommended",
   favsOnly: false
 };
@@ -1073,6 +1074,7 @@ try {
 /* ---------- Elements ---------- */
 const grid = document.getElementById("grid");
 const chips = document.getElementById("chips");
+const subChips = document.getElementById("subChips");
 const searchInput = document.getElementById("search");
 const sortSelect = document.getElementById("sort");
 const empty = document.getElementById("empty");
@@ -1166,6 +1168,10 @@ function visibleRecipes() {
   const list = RECIPES.filter((recipe) => {
     if (state.favsOnly && !favs.has(recipe.id)) return false;
     if (state.category !== "All" && recipe.category !== state.category) return false;
+    if (state.category === "Sauces" && state.subcategory !== "All") {
+      const sub = recipe.subcategory || "Sauces";
+      if (sub !== state.subcategory) return false;
+    }
     return matchesQuery(recipe, state.query);
   });
 
@@ -1184,6 +1190,22 @@ function renderChips() {
         `<button class="chip" type="button" data-category="${category}" aria-pressed="${category === state.category}">${category}</button>`
     )
     .join("");
+}
+
+const SAUCE_TYPES = ["All", "Sauces", "French Mother Sauces"];
+
+function renderSubChips() {
+  if (!subChips) return;
+  if (state.category !== "Sauces") {
+    subChips.hidden = true;
+    subChips.innerHTML = "";
+    return;
+  }
+  subChips.hidden = false;
+  subChips.innerHTML = SAUCE_TYPES.map(
+    (type) =>
+      `<button class="sub-chip" type="button" data-sub="${type}" aria-pressed="${type === state.subcategory}">${type}</button>`
+  ).join("");
 }
 
 /* ---------- Render: cards ---------- */
@@ -1236,6 +1258,7 @@ function renderNav() {
 
 function render() {
   renderChips();
+  renderSubChips();
   renderGrid();
   renderNav();
   if (currentRecipe) updateModalFav();
@@ -1389,8 +1412,19 @@ chips.addEventListener("click", (event) => {
   const button = event.target.closest("[data-category]");
   if (!button) return;
   state.category = button.dataset.category;
+  state.subcategory = "All";
   render();
 });
+
+if (subChips) {
+  subChips.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-sub]");
+    if (!button) return;
+    state.subcategory = button.dataset.sub;
+    renderGrid();
+    renderSubChips();
+  });
+}
 
 sortSelect.addEventListener("change", () => {
   state.sort = sortSelect.value;
