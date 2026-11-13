@@ -1243,7 +1243,7 @@ function openRecipe(id) {
   if (!recipe) return;
 
   currentRecipe = recipe;
-  currentServings = recipe.servings;
+  currentServings = 1;
   lastFocused = document.activeElement;
 
   panel.innerHTML = `
@@ -1259,7 +1259,7 @@ function openRecipe(id) {
         <p>${recipe.description}</p>
         <div class="meta-chips">
           ${statChip(ICONS.clock, "Time", `${recipe.time} min`)}
-          ${statChip(ICONS.flame, "Per serving", `${recipe.calories} kcal`)}
+          <span class="chip-stat">${ICONS.flame}Calories <b id="kcalOut">${recipe.calories} kcal</b></span>
           ${statChip(ICONS.users, "Difficulty", recipe.difficulty)}
         </div>
       </div>
@@ -1320,6 +1320,8 @@ function changeServings(delta) {
 
   document.getElementById("servOut").textContent = String(currentServings);
   document.getElementById("ingList").innerHTML = ingredientsHTML(currentRecipe, currentServings);
+  const kcalEl = document.getElementById("kcalOut");
+  if (kcalEl) kcalEl.textContent = `${currentRecipe.calories * currentServings} kcal`;
   syncStepper();
 }
 
