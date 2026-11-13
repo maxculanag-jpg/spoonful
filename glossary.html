@@ -19,6 +19,7 @@
     .term { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--green); }
     .pron { font-size: 0.78rem; font-weight: 500; color: var(--muted-soft); font-style: italic; margin-left: 6px; }
     .def { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+    .glossary-section { margin: 28px 0 12px; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; color: var(--green); }
     .glossary-back { display: inline-flex; margin-top: 30px; color: var(--green); font-weight: 600; text-decoration: none; }
     .glossary-back:hover { text-decoration: underline; }
     @media (max-width: 620px) { .glossary-list li { grid-template-columns: 1fr; gap: 4px; } .glossary { padding-top: 40px; } }
@@ -59,6 +60,28 @@
       <p class="eyebrow">Reference</p>
       <h1>Glossary of cooking terms</h1>
       <p class="lede">Plain-English explanations of the words you'll meet across the recipes. No jargon, no gatekeeping.</p>
+      
+      <h2 class="glossary-section">Knife techniques</h2>
+      <ul class="glossary-list glossary-knife">
+        <li><span class="term">Chiffonade <span class="pron">shif-oh-NAD</span></span><span class="def">Stack leafy greens or herbs, roll them up, and slice into thin ribbons.</span></li>
+        <li><span class="term">Dice</span><span class="def">Cut into small, even cubes.</span></li>
+        <li><span class="term">Julienne <span class="pron">zhoo-lee-EN</span></span><span class="def">Cut into thin matchstick-sized strips.</span></li>
+        <li><span class="term">Mince</span><span class="def">Chop very finely.</span></li>
+        <li><span class="term">Brunoise <span class="pron">BROON-wahz</span></span><span class="def">Very fine dice (about 1/8 inch) cut from julienned vegetables.</span></li>
+                <li><span class="term">Chop</span><span class="def">Cut into small, slightly irregular pieces.</span></li>
+                <li><span class="term">Cube</span><span class="def">Cut into even cubes, about 1/2 inch on each side.</span></li>
+                <li><span class="term">Matchstick</span><span class="def">Cut into thin strips about 1/8 inch thick.</span></li>
+                <li><span class="term">Pare</span><span class="def">Trim away a thin layer of skin with a paring knife or peeler.</span></li>
+                <li><span class="term">Peel</span><span class="def">Remove the outer skin or rind of a fruit or vegetable.</span></li>
+                <li><span class="term">Score</span><span class="def">Make shallow cuts on the surface to tenderize or decorate.</span></li>
+                <li><span class="term">Shave</span><span class="def">Slice a very thin layer, such as chocolate or cheese.</span></li>
+                <li><span class="term">Shred</span><span class="def">Cut into narrow strips with a grater, or pull apart with forks.</span></li>
+                <li><span class="term">Slice</span><span class="def">Cut into thin, flat pieces.</span></li>
+                <li><span class="term">Sliver</span><span class="def">Cut into long, thin strips.</span></li>
+                <li><span class="term">Snip</span><span class="def">Cut into small pieces with scissors.</span></li>
+      </ul>
+
+      <h2 class="glossary-section">All terms</h2>
       <ul class="glossary-list">
         <li><span class="term">Al dente <span class="pron">al-DEN-tay</span></span><span class="def">Pasta cooked until tender but still with a slight bite in the centre.</span></li>
         <li><span class="term">Bain-marie <span class="pron">bayn mah-REE</span></span><span class="def">A gentle water bath — a bowl set over simmering water — used to melt chocolate or cook delicate sauces without scorching.</span></li>
@@ -69,14 +92,12 @@
         <li><span class="term">Braise</span><span class="def">Brown meat or veg in fat, then cook slowly, covered, in a little liquid until tender.</span></li>
         <li><span class="term">Broil</span><span class="def">Cook directly under or over a strong heat source.</span></li>
         <li><span class="term">Caramelize</span><span class="def">Heat sugar until it melts and turns golden, or cook onions low and slow until sweet and brown.</span></li>
-        <li><span class="term">Chiffonade <span class="pron">shif-oh-NAD</span></span><span class="def">Stack leafy greens or herbs, roll them up, and slice into thin ribbons.</span></li>
         <li><span class="term">Clarify</span><span class="def">Remove milk solids from butter (or impurities from stock) to leave a clear liquid.</span></li>
         <li><span class="term">Confit <span class="pron">kon-FEE</span></span><span class="def">Slowly cook food in fat at a low temperature until meltingly tender.</span></li>
         <li><span class="term">Coulis <span class="pron">koo-LEE</span></span><span class="def">A smooth, strained purée of fruit or vegetables used as a sauce.</span></li>
         <li><span class="term">Cream</span><span class="def">Beat butter and sugar (or similar) until smooth, pale and fluffy.</span></li>
         <li><span class="term">Deglaze</span><span class="def">Add liquid to a hot pan to loosen the browned bits (fond), forming the base of a sauce.</span></li>
         <li><span class="term">Demi-glace <span class="pron">duh-mee-GLAHS</span></span><span class="def">A rich, reduced brown sauce made from Espagnole and stock.</span></li>
-        <li><span class="term">Dice</span><span class="def">Cut into small, even cubes.</span></li>
         <li><span class="term">Dredge</span><span class="def">Coat food in a dry ingredient such as flour or breadcrumbs before frying.</span></li>
         <li><span class="term">Emulsify</span><span class="def">Force two liquids that don't mix (like oil and water) into a creamy, stable blend.</span></li>
         <li><span class="term">Espagnole <span class="pron">es-pan-YOL</span></span><span class="def">The brown mother sauce — veal stock, vegetables and tomato purée, the base of demi-glace.</span></li>
@@ -87,10 +108,8 @@
         <li><span class="term">Glaze</span><span class="def">Coat food with a thin, glossy layer.</span></li>
         <li><span class="term">Grate</span><span class="def">Shred food into fine pieces using a grater.</span></li>
         <li><span class="term">Hollandaise <span class="pron">hol-un-DAYZ</span></span><span class="def">An emulsion of egg yolks, butter and lemon — rich, buttery and lightly tangy.</span></li>
-        <li><span class="term">Julienne <span class="pron">zhoo-lee-EN</span></span><span class="def">Cut into thin matchstick-sized strips.</span></li>
         <li><span class="term">Knead</span><span class="def">Work dough by hand to develop gluten and make it smooth and elastic.</span></li>
         <li><span class="term">Marinate</span><span class="def">Soak food in a seasoned liquid to add flavour and tenderness.</span></li>
-        <li><span class="term">Mince</span><span class="def">Chop very finely.</span></li>
         <li><span class="term">Mirepoix <span class="pron">meer-PWAH</span></span><span class="def">A flavour base of diced onion, carrot and celery.</span></li>
         <li><span class="term">Mornay <span class="pron">mor-NAY</span></span><span class="def">Béchamel with cheese added — a daughter sauce.</span></li>
         <li><span class="term">Poach</span><span class="def">Cook gently in liquid just below boiling point.</span></li>
@@ -109,7 +128,6 @@
         <li><span class="term">Velouté <span class="pron">veh-loo-TAY</span></span><span class="def">Stock thickened with a light blond roux — silky and versatile.</span></li>
         <li><span class="term">Whisk</span><span class="def">Beat ingredients with a wire whisk to combine and add air.</span></li>
         <li><span class="term">Zest</span><span class="def">The coloured outer peel of citrus fruit, finely grated.</span></li>
-      
         <li><span class="term">Aioli <span class="pron">ay-OH-lee</span></span><span class="def">A garlic-and-oil emulsion; popularly a garlicky mayonnaise.</span></li>
         <li><span class="term">Amandine <span class="pron">ah-mahn-deen</span></span><span class="def">Dishes garnished with almonds, usually slivered or sliced.</span></li>
         <li><span class="term">Beurre blanc <span class="pron">burr BLAHNK</span></span><span class="def">A delicate sauce of white wine, vinegar and shallots emulsified with butter.</span></li>
@@ -118,7 +136,6 @@
         <li><span class="term">Bisque <span class="pron">bisk</span></span><span class="def">A smooth, creamy soup, classically from shellfish.</span></li>
         <li><span class="term">Blanquette <span class="pron">blahn-KETTE</span></span><span class="def">A white stew of unbrowned meat (veal or chicken) in a creamy sauce.</span></li>
         <li><span class="term">Bouillon <span class="pron">BOOL-yon</span></span><span class="def">A clear, seasoned broth; also the cubes or powder used to make it.</span></li>
-        <li><span class="term">Brunoise <span class="pron">BROON-wahz</span></span><span class="def">Very fine dice (about 1/8 inch) cut from julienned vegetables.</span></li>
         <li><span class="term">Canapé <span class="pron">can-a-pay</span></span><span class="def">A bite-sized layered hors d'oeuvre on a sturdy base (toast, cracker, veg).</span></li>
         <li><span class="term">Cartouche <span class="pron">kar-TOOSH</span></span><span class="def">A parchment paper lid placed on the surface of a simmering dish to slow evaporation.</span></li>
         <li><span class="term">Charcuterie <span class="pron">shar-KOO-tuh-ree</span></span><span class="def">The art of preserving meats — sausages, confit, pâté, ham, bacon.</span></li>
